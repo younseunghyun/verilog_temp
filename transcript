@@ -1,0 +1,183 @@
+# Reading C:/Modeltech_6.2b/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.2b Jul 31 2006 
+# //
+# //  Copyright 2006 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project full_adder
+# Compile of full_adder.v was successful.
+# Compile of full_adder_8_bit_behavior.v was successful.
+# Compile of tb_full_ader.v was successful.
+# Compile of full_adder_Behavior.v was successful.
+# Compile of full_adder_8_bit_data_flow.v was successful.
+# Compile of full_adder_data_flow.v was successful.
+# Compile of tb_full_ader_data_flow.v was successful.
+# Compile of full_adder_8_bit_gate.v was successful.
+# Compile of full_adder_gate.v was successful.
+# Compile of tb_full_ader_gate.v was successful.
+# Compile of full_adder_gate_delay.v was successful.
+# Compile of tb_full_ader_gate_delay.v was successful.
+# Compile of bit_counter_8bit.v was successful.
+# Compile of t_ff.v was successful.
+# Compile of tb_bit_counter.v was successful.
+# 15 compiles, 0 failed with no errors. 
+vsim -coverage work.tb_bit_counter
+# vsim -coverage work.tb_bit_counter 
+# Loading work.tb_bit_counter(fast)
+# Loading work.t_ff(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 't_ff' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_bit_counter/t_ff$0
+add wave -r /*
+run
+run
+vsim -coverage work.tb_full_ader
+# vsim -coverage work.tb_full_ader 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_full_ader(fast)
+# Loading work.full_adder(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_full_ader/fa1
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/tb_full_ader.v(7): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'a'.
+#         Region: /tb_full_ader/fa1
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/tb_full_ader.v(7): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'b'.
+#         Region: /tb_full_ader/fa1
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/tb_full_ader.v(7): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'c_in'.
+#         Region: /tb_full_ader/fa1
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/tb_full_ader.v(7): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'sum'.
+#         Region: /tb_full_ader/fa1
+# ** Warning: (vsim-3015) C:/Modeltech_pe_edu_10.4a/examples/tb_full_ader.v(7): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'c_out'.
+#         Region: /tb_full_ader/fa1
+add wave -r /*
+run
+#                    0output sum = $d, c_out = $dZZ
+run
+run
+run
+run
+run
+vsim -coverage work.tb_8_bit_full_adder_data_flow
+# vsim -coverage work.tb_8_bit_full_adder_data_flow 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_8_bit_full_adder_data_flow(fast)
+# Loading work.full_adder_8_bit_data_flow(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder_8_bit_data_flow' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_8_bit_full_adder_data_flow/fa8
+# Loading work.full_adder_data_flow(fast)
+# ** Warning: (vsim-3009) [TSCALE] - Module 'full_adder_data_flow' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_8_bit_full_adder_data_flow/fa8/fah1
+# ** Warning: (vsim-3015) C:/Modeltech_6.2b/examples/tb_full_ader_data_flow.v(10): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'c_out'.
+#         Region: /tb_8_bit_full_adder_data_flow/fa8
+# ** Warning: (vsim-3015) C:/Modeltech_6.2b/examples/tb_full_ader_data_flow.v(10): [PCDPC] - Port size (1 or 1) does not match connection size (2) for port 'over_flow'.
+#         Region: /tb_8_bit_full_adder_data_flow/fa8
+add wave -r /*
+run
+#                    0output sum = 153, c_out = Z
+run
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run
+run
+run
+run
+run
+run
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+env ..
+# sim:/tb_8_bit_full_adder_data_flow
+add wave -r /*
+run
+run
+run
+run
+run
+run
